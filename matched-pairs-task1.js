@@ -11,6 +11,9 @@ function countUnpaired(input) {
 }
 // Tests
 const testscript1 = () => {
+  console.log(countUnpaired([]));
+  console.log(countUnpaired([1, 1]));
+  console.log(countUnpaired([1, 1, 1]));
   console.log(countUnpaired([1, 2, 3, 4]));
   console.log(countUnpaired([1, 1, 2, 2, 3, 3, 4, 4]));
   console.log(countUnpaired([1, 2, 2, 3, 3, 3, 4, 4, 4, 4]));

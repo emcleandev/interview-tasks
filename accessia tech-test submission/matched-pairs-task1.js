@@ -6,7 +6,6 @@ function countUnpaired(input) {
     if (isExisting) map.delete(num); // loves me not
     else map.set(num, true); // loves me
   });
-  console.log(map);
   return map.size;
 }
 // Tests

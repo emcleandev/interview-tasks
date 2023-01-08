@@ -15,7 +15,6 @@ function furthestRoom(input) {
         let matchingRoom = path[+!foundRoomIndex];
         let matchingRoomCost = hashmap.get(matchingRoom);
         exploreCost = (hashmap.get(room) ?? 0) + 1;
-
         if (matchingRoomCost == undefined) {
           queue.push(matchingRoom);
           hashmap.set(matchingRoom, exploreCost);
@@ -30,9 +29,6 @@ function furthestRoom(input) {
       i++;
     }
   }
-  // console.log("queue", queue);
-  // console.log("paths", paths);
-  // console.log("map", hashmap);
   let longest = 0;
   hashmap.forEach((value, key, map) => {
     longest = value > longest ? value : longest;
